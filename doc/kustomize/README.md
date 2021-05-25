@@ -1,3 +1,6 @@
+
+# Note: I didn't know how customize worked when I forked this. Turns out I had a smooth brain moment. Will do it right tomorrow....ish......
+
 # Install Guide for Kubernetes using Kustomize
 
 This guide will deploy jitsi on a kubernetes cluster based on [Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/). Kubernetes Kustomize allows you to configure your jitsi setup in an easy and transparent way. 
