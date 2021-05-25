@@ -28,6 +28,13 @@ spec:
         - name: jicofo
           image: jitsi/jicofo:stable-5870
           imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
           env:
             - name: XMPP_SERVER
               value: localhost
@@ -58,6 +65,13 @@ spec:
         - name: prosody
           image: jitsi/prosody:stable-5870
           imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "100m"
+              memory: "128Mi"
           env:
             - name: XMPP_DOMAIN
               value: meet.jitsi
@@ -93,6 +107,13 @@ spec:
         - name: web
           image: jitsi/web:stable-5870
           imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "100m"
+              memory: "128Mi"
           env:
             - name: XMPP_SERVER
               value: localhost
@@ -115,6 +136,13 @@ spec:
         - name: jvb
           image: jitsi/jvb:stable-5870
           imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
           env:
             - name: XMPP_SERVER
               value: localhost
