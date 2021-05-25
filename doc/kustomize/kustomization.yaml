@@ -6,4 +6,4 @@ resources:
 - 030-deployment.yaml
 - 040-web-service.yaml
 - 041-ingress.yaml
-- 050-config.yaml
+- 050-config-secret.yaml
