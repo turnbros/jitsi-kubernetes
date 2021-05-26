@@ -93,6 +93,8 @@ spec:
               value: "guest.meet.jitsi"
             - name: ENABLE_LOBBY
               value: "1"
+            - name: XMPP_CROSS_DOMAIN
+              value: "true"
             - name: XMPP_DOMAIN
               value: jitsi.arroyo.turnbros.app
             - name: XMPP_AUTH_DOMAIN
