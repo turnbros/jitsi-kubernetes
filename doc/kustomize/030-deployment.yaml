@@ -152,6 +152,8 @@ spec:
               cpu: "500m"
               memory: "512Mi"
           env:
+            - name: PUBLIC_URL_DOMAIN
+              value: https://jitsi.arroyo.turnbros.app/
             - name: XMPP_SERVER
               value: localhost
             - name: DOCKER_HOST_ADDRESS
