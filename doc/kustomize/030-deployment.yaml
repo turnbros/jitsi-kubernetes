@@ -41,7 +41,7 @@ spec:
             - name: PUBLIC_URL
               value: https://jitsi.arroyo.turnbros.app
             - name: XMPP_SERVER
-              value: localhost
+              value: jitsi.arroyo.turnbros.app
             - name: XMPP_DOMAIN
               value: meet.jitsi
             - name: XMPP_AUTH_DOMAIN
@@ -143,7 +143,7 @@ spec:
             - name: PUBLIC_URL
               value: https://jitsi.arroyo.turnbros.app
             - name: XMPP_SERVER
-              value: localhost
+              value: jitsi.arroyo.turnbros.app
             - name: JICOFO_AUTH_USER
               value: focus
             - name: XMPP_DOMAIN
@@ -178,7 +178,7 @@ spec:
             - name: PUBLIC_URL
               value: https://jitsi.arroyo.turnbros.app
             - name: XMPP_SERVER
-              value: localhost
+              value: jitsi.arroyo.turnbros.app
             - name: DOCKER_HOST_ADDRESS
               value: localhost
             - name: XMPP_DOMAIN
