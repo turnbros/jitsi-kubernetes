@@ -7,3 +7,5 @@ resources:
 - 040-web-service.yaml
 - 041-ingress.yaml
 - 050-config-secret.yaml
+- 061-prosody-service.yaml
+- 062-prosody-ingress.yaml
