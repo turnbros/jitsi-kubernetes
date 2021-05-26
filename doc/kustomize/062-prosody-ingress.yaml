@@ -1,0 +1,27 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prosody
+  namespace: jitsi
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    kubernetes.io/ingress.class: traefik
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls: "true"
+spec:
+  tls:
+  - hosts:
+    - prosody.arroyo.turnbros.app
+    secretName: tls-prosody
+  rules:
+  - host: prosody.arroyo.turnbros.app
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: ws
+            port:
+              number: 5280
