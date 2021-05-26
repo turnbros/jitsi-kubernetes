@@ -38,6 +38,8 @@ spec:
               cpu: "500m"
               memory: "512Mi"
           env:
+            - name: PUBLIC_URL_DOMAIN
+              value: https://jitsi.arroyo.turnbros.app/
             - name: XMPP_SERVER
               value: localhost
             - name: XMPP_DOMAIN
@@ -121,6 +123,8 @@ spec:
               cpu: "100m"
               memory: "128Mi"
           env:
+            - name: PUBLIC_URL_DOMAIN
+              value: https://jitsi.arroyo.turnbros.app/
             - name: XMPP_SERVER
               value: localhost
             - name: JICOFO_AUTH_USER
