@@ -25,6 +25,8 @@ spec:
         k8s-app: jitsi
     spec:
       containers:
+
+
         - name: jicofo
           image: jitsi/jicofo:stable-5870
           imagePullPolicy: IfNotPresent
@@ -59,9 +61,11 @@ spec:
                   name: jitsi-config
                   key: JICOFO_AUTH_PASSWORD
             - name: TZ
-              value: America/Los_Angeles
+              value: America/Chicago
             - name: JVB_BREWERY_MUC
               value: jvbbrewery
+
+
         - name: prosody
           image: jitsi/prosody:stable-5870
           imagePullPolicy: IfNotPresent
@@ -101,9 +105,11 @@ spec:
                   name: jitsi-config
                   key: JICOFO_AUTH_PASSWORD
             - name: TZ
-              value: America/Los_Angeles
+              value: America/Chicago
             - name: JVB_TCP_HARVESTER_DISABLED
               value: "true"
+
+
         - name: web
           image: jitsi/web:stable-5870
           imagePullPolicy: IfNotPresent
@@ -130,9 +136,11 @@ spec:
             - name: XMPP_MUC_DOMAIN
               value: muc.meet.jitsi
             - name: TZ
-              value: America/Los_Angeles
+              value: America/Chicago
             - name: JVB_TCP_HARVESTER_DISABLED
               value: "true"
+
+
         - name: jvb
           image: jitsi/jvb:stable-5870
           imagePullPolicy: IfNotPresent
@@ -177,5 +185,7 @@ spec:
             - name: JVB_BREWERY_MUC
               value: jvbbrewery
             - name: TZ
-              value: America/Los_Angeles
+              value: America/Chicago
+
+
       serviceAccountName: jitsi
