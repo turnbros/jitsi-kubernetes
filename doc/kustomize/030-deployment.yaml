@@ -39,7 +39,7 @@ spec:
               memory: "512Mi"
           env:
             - name: PUBLIC_URL
-              value: https://jitsi.arroyo.turnbros.app/
+              value: https://jitsi.arroyo.turnbros.app
             - name: XMPP_SERVER
               value: localhost
             - name: XMPP_DOMAIN
@@ -141,7 +141,7 @@ spec:
               memory: "128Mi"
           env:
             - name: PUBLIC_URL
-              value: https://jitsi.arroyo.turnbros.app/
+              value: https://jitsi.arroyo.turnbros.app
             - name: XMPP_SERVER
               value: localhost
             - name: JICOFO_AUTH_USER
@@ -176,7 +176,7 @@ spec:
               memory: "512Mi"
           env:
             - name: PUBLIC_URL
-              value: https://jitsi.arroyo.turnbros.app/
+              value: https://jitsi.arroyo.turnbros.app
             - name: XMPP_SERVER
               value: localhost
             - name: DOCKER_HOST_ADDRESS
@@ -191,6 +191,8 @@ spec:
               value: stun.l.google.com:19302,stun1.l.google.com:19302,stun2.l.google.com:19302
             - name: JICOFO_AUTH_USER
               value: focus
+            - name: JVB_WS_DOMAIN
+              value: https://jitsi.arroyo.turnbros.app
             - name: JVB_TCP_HARVESTER_DISABLED
               value: "true"
             - name: JVB_AUTH_USER
