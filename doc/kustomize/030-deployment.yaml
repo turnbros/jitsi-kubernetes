@@ -83,6 +83,12 @@ spec:
               cpu: "100m"
               memory: "128Mi"
           env:
+            - name: ENABLE_AUTH
+              value: "1"
+            - name: ENABLE_GUESTS
+              value: "1"
+            - name: ENABLE_LOBBY
+              value: "1"
             - name: XMPP_DOMAIN
               value: meet.jitsi
             - name: XMPP_AUTH_DOMAIN
