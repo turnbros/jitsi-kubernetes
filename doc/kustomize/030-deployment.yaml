@@ -87,6 +87,8 @@ spec:
               value: "1"
             - name: ENABLE_GUESTS
               value: "1"
+            - name: XMPP_GUEST_DOMAIN
+              value: "guest.meet.jitsi"
             - name: ENABLE_LOBBY
               value: "1"
             - name: XMPP_DOMAIN
