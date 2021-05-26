@@ -176,7 +176,7 @@ spec:
             - name: XMPP_SERVER
               value: localhost
             - name: DOCKER_HOST_ADDRESS
-              value: localhost
+              value: jitsi.arroyo.turnbros.app
             - name: XMPP_DOMAIN
               value: jitsi.arroyo.turnbros.app
             - name: XMPP_AUTH_DOMAIN
