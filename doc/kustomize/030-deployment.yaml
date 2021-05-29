@@ -50,6 +50,12 @@ spec:
               value: muc.meet.jitsi
             - name: XMPP_INTERNAL_MUC_DOMAIN
               value: internal-muc.meet.jitsi
+            - name: ENABLE_CODEC_VP8
+              value: "false"
+            - name: ENABLE_CODEC_VP9
+              value: "false"
+            - name: ENABLE_CODEC_H264
+              value: "true"
             - name: JICOFO_COMPONENT_SECRET
               valueFrom:
                 secretKeyRef:
